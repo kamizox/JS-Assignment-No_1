@@ -1,4 +1,5 @@
-const num = 40;
+const num1 = 40;
+var num2;
 console.log(num)
 
 
