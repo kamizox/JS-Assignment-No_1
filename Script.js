@@ -1,9 +1,5 @@
-const num1 = 40;
-var num2;
-console.log(num)
-
-
-function calculator()
-{
-    console.log();
-}
+alert("Welcome to my Website")
+alert("Error! Please Enter a Valid Password")
+alert("Welcome to JS land...\n Happy Coaching!")
+alert("Welcome to JS Land...")
+alert("Happy Coaching!")
