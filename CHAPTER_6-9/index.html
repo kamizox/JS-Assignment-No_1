@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = 10;
+      document.writeln("Result:" + "<br>");
+      document.writeln("The value of a is: " + a + "<br>");
+      document.writeln("--------------------------" + "<br>");
+
+      document.writeln("The value of ++a is: " + ++a + "<br>");
+      document.writeln("Now the value of a is: " + a + "<br>" + "<br>");
+
+      document.writeln("The value of a++ is: " + a++ + "<br>");
+      document.writeln("Now the value of a is: " + a + "<br>" + "<br>");
+
+      document.writeln("The value of --a: " + --a + "<br>");
+      document.writeln("Now the value of a is: " + a + "<br>" + "<br>");
+
+      document.writeln("The value of a-- " + a-- + "<br>");
+      document.writeln(
+        "Now the value of a is: " + a + "<br>" + "<br>" + "<br>"
+      );
+    </script>
+
+    <script>
+      var a = 2,
+        b = 1;
+      var result = --a - --a + ++b + b--;
+      // --a        → a becomes 1, returns 1
+      // --b        → b becomes 0, returns 0
+      // ++b        → b becomes 1, returns 1
+      // b--        → returns 1, then b becomes 0
+      document.writeln("a is " + a + "<br>");
+      document.writeln("b is " + b + "<br>");
+      document.writeln("result is " + result + "<br>" + "<br>" + "<br>");
+    </script>
+
+    <script>
+      var name_1 = prompt("Enter your name ");
+      document.writeln("Welcome " + name_1 + "<br>" + "<br>");
+    </script>
+
+    <script>
+      // multiplication table of
+      var n = +prompt("Enter table No. ");
+      if (n == 0) {
+        document.writeln("5 x 1 = 5 " + "<br>");
+        document.writeln("5 x 2 = 10 " + "<br>");
+        document.writeln("5 x 3 = 15 " + "<br>");
+        document.writeln("5 x 4 = 20 " + "<br>");
+        document.writeln("5 x 5 = 25 " + "<br>");
+        document.writeln("5 x 6 = 30 " + "<br>");
+        document.writeln("5 x 7 = 35 " + "<br>");
+        document.writeln("5 x 8 = 40 " + "<br>");
+        document.writeln("5 x 9 = 45 " + "<br>");
+        document.writeln("5 x 10 = 50 " + "<br>");
+      } else {
+        document.writeln(n + " x 1 = " + n * 1 + "<br>");
+        document.writeln(n + " x 2 = " + n * 2 + "<br>");
+        document.writeln(n + " x 3 = " + n * 3 + "<br>");
+        document.writeln(n + " x 4 = " + n * 4 + "<br>");
+        document.writeln(n + " x 5 = " + n * 5 + "<br>");
+        document.writeln(n + " x 6 = " + n * 6 + "<br>");
+        document.writeln(n + " x 7 = " + n * 7 + "<br>");
+        document.writeln(n + " x 8 = " + n * 8 + "<br>");
+        document.writeln(n + " x 9 = " + n * 9 + "<br>");
+        document.writeln(n + " x 10 = " + n * 10 + "<br>");
+      }
+    </script>
+
+
+
+        <!-- Mark Sheet calculator -->
+    <h3>Subject Total Marks Obtained Marks Percentage</h3>
+
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+
+
+    <script>
+      var sub_1 = prompt("Enter your First Subject Name");
+      var sub_2 = prompt("Enter your Second Subject Name");
+      var sub_3 = prompt("Enter your Third Subject Name");
+
+      var TotalNumber_subj = 100;
+      var obt_mark_Sub1 = +prompt("Enter your First Subject Marks");
+      var obt_mark_Sub2 = +prompt("Enter your Second Subject Marks");
+      var obt_mark_Sub3 = +prompt("Enter your Second Subject Marks");
+
+         var Percentage_3 =(obt_mark_Sub3 / TotalNumber_subj)*100;
+            var Percentage_2 = (obt_mark_Sub2 / TotalNumber_subj)*100;
+            var Percentage_1 = (obt_mark_Sub1 / TotalNumber_subj)*100;
+
+        document.writeln("<td>"+sub_1+"</td>")
+        document.writeln("<td>"+TotalNumber_subj +"</td>")
+        document.writeln("<td>"+obt_mark_Sub1 +"</td>")
+        document.writeln("<td>"+Percentage_1.toFixed(2) +"</td>")
+    </script>
+     </tr>
+     <tr>
+        
+    <script>
+    document.writeln("<td>"+sub_2+"</td>")
+        document.writeln("<td>"+TotalNumber_subj +"</td>")
+        document.writeln("<td>"+obt_mark_Sub2 +"</td>")
+        document.writeln("<td>"+Percentage_2.toFixed(2) +"</td>")
+    </script>
+     </tr>
+
+    <tr>
+    <script>
+        document.writeln("<td>"+sub_3+"</td>")
+        document.writeln("<td>"+TotalNumber_subj +"</td>")
+        document.writeln("<td>"+obt_mark_Sub3 +"</td>")
+        document.writeln("<td>"+Percentage_3.toFixed(2) +"</td>")
+    </script>
+     </tr>
+
+     <tr>
+        <script>
+            To_per = Percentage_1+Percentage_2+Percentage_3;
+        document.writeln("<td></td>")
+        document.writeln("<td><b>"+TotalNumber_subj*3 +"</b></td>")
+        document.writeln("<td><b>"+(obt_mark_Sub1+ obt_mark_Sub2+ obt_mark_Sub3)+"</b></td>")
+        document.writeln("<td><b>"+To_per.toFixed(2) +"</b></td>")
+        </script>
+     </tr>
+    </table>
+
+
+    <script src="Script.js"></script>
+  </body>
+</html>
