@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var city = prompt("Enter City Name");
+      if (city == "karachi" || city == "Karachi") {
+        document.writeln("Welcome to city of lights" + "<br>" + "<br>");
+      }
+    </script>
+
+    <script>
+      var gender = prompt("App Nar hy Ya Madah");
+      if (gender == "Nar") {
+        document.writeln(
+          "Mubarak ho Sir App Nar peda huwy hien" + "<br>" + "<br>"
+        );
+      } else if (gender == "madah") {
+        document.writeln(
+          "Mubarak ho Madam App Madah peda hui hien" + "<br>" + "<br>"
+        );
+      } else {
+        document.writeln(
+          "Apny Nar ya madah hony ka saboot sahi sy dein" + "<br>" + "<br>"
+        );
+      }
+    </script>
+
+    <script>
+      var color = prompt("Enter the color of road traffic signal:");
+      color = color.toLowerCase();
+
+      var signalColor = "";
+      var message = "";
+
+      if (color === "red") {
+        signalColor = "Red";
+        message = "Must Stop";
+      } else if (color === "yellow") {
+        signalColor = "Yellow";
+        message = "Ready to move";
+      } else if (color === "green") {
+        signalColor = "Green";
+        message = "Move now";
+      } else {
+        signalColor = "Invalid";
+        message = "Unknown color!";
+      }
+
+      document.write("<table border='1'>");
+      document.write("<tr><th>Signal Color</th><th>Message</th></tr>");
+      document.write(
+        "<tr><td>" + signalColor + "</td><td>" + message + "</td></tr>"
+      );
+      document.write("</table>" + "<br>");
+    </script>
+
+    <script>
+      var fuel = +prompt("Enter your remaining fuel");
+      if (fuel < 0.25) {
+        document.writeln("Please refill the fuel in your car" + "<br>");
+      }
+    </script>
+
+    <script>
+      var a = 4;
+      var b = 82;
+      var c = 12;
+      var materialCost = 20000;
+      if (++a === 5) {
+        alert("given condition for variable a is true");
+      }
+      if (b++ === 83) {
+        alert("given condition for variable b is true");
+      }
+      if (c++ === 13) {
+        alert("condition 1 is true");
+      }
+      if (c === 13) {
+        alert("condition 2 is true");
+      }
+      if (++c < 14) {
+        alert("condition 3 is true");
+      }
+      if (c === 14) {
+        alert("condition 4 is true");
+      }
+      var materialCost = 20000;
+      var laborCost = 2000;
+      var totalCost = materialCost + laborCost;
+      if (totalCost === laborCost + materialCost) {
+        alert("The cost equals");
+      }
+      if (true) {
+        alert("True");
+      }
+      if (false) {
+        alert("False");
+      }
+      if ("car" < "cat") {
+        alert("car is smaller than cat");
+      }
+    </script>
+    <h1>Mark Sheet <br /></h1>
+
+    <script>
+      var obtMark_1 = +prompt("Enter obtained Marks fo first subject");
+      var obtMark_2 = +prompt("Enter obtained Marks fo second subject");
+      var obtMark_3 = +prompt("Enter obtained Marks fo third subject");
+      var total = 300;
+      var obt_total = obtMark_1 + obtMark_2 + obtMark_3;
+      var Percentage = (obt_total / total) * 100;
+      document.writeln("Total marks: " + total + "<br>" + "<br>");
+      document.writeln("Marks Obtained : " + obt_total + "<br>");
+      document.writeln("Percentage: " + Percentage + "%" + "<br>");
+
+      if (Percentage >= 80) {
+        document.writeln("Grade: A-one" + "<br>");
+        document.writeln("Excellent");
+      }
+      if (Percentage >= 70) {
+        document.writeln("Grade: A" + "<br>");
+        document.writeln("Good");
+      }
+      if (Percentage >= 60) {
+        document.writeln("Grade: B" + "<br>");
+        document.writeln("You need to improve");
+      }
+      if (Percentage < 60) {
+        document.writeln("Grade: Fail" + "<br>");
+        document.writeln("Sorry");
+      }
+
+      document.writeln("<table border='1'>");
+      document.writeln("<th><b>Percentage %</b></th>");
+      document.writeln("<th><b>Grade</b></th>");
+      document.writeln("<th><b>Remarks</b></th>");
+      document.writeln(
+        "<tr><td>Greater than or equal to 80</td> <td>A-one</td> <td>Excellent</td>"
+      );
+      document.writeln(
+        "<tr><td>Greater than or equal to 70</td> <td>A</td> <td>Good</td>"
+      );
+      document.writeln(
+        "<tr><td>Greater than or equal to 60</td> <td>B</td> <td>You need to improve</td>"
+      );
+      document.writeln(
+        "<tr><td>Less than 60</td> <td>Fail</td> <td>Sorry</td>"
+      );
+    </script>
+
+    <script>
+      var secret_num = +prompt("Guess a secret number");
+      var My_sec_num = 4;
+      if (My_sec_num == secret_num) {
+        document.writeln("Bingo! Correct answer"+ "<br>");
+      } else if (++My_sec_num == secret_num) {
+        document.writeln("Close enough to the correct answer"+ "<br>");
+      }
+    </script>
+
+    <script>
+      var chNum =+prompt("Enter a number to check whether it is divisible by 3 or not")
+      if(chNum%3==0)
+    {
+      document.writeln("Yes this number is divisible by 3"+ "<br>")
+    }
+    </script>
+
+    <script>
+      var numE = +prompt("Enter a number to check even or odd")
+      if(numE%2==0)
+    {
+      document.writeln("It is even No"+ "<br>")
+    }else{
+      document.writeln("It is odd No"+ "<br>")
+    }
+    </script>
+
+    <script>
+      var Temp = +prompt("Enter Temperature greater than 9")
+      if(Temp > 40)
+    {
+      document.writeln("It is too hot outside."+ "<br>")
+    }else if(Temp > 30)
+    {
+      document.writeln("The Weather today is Normal."+ "<br>")
+    }else if(Temp > 20)
+    {
+      document.writeln("Today's Weather is cool."+ "<br>")
+    }else if(Temp > 10)
+    {
+      document.writeln("OMG! Today's weather is so Cool."+ "<br>")
+    }
+    </script>
+
+    <script>
+var firstNumber = parseFloat(prompt("Enter first number:"));
+var secondNumber = parseFloat(prompt("Enter second number:"));
+var operation = prompt("Enter operation (+, -, *, /, %):");
+
+let result;
+
+
+if (operation === "+") {
+    result = firstNumber + secondNumber;
+} 
+else if (operation === "-") {
+    result = firstNumber - secondNumber;
+} 
+else if (operation === "*") {
+    result = firstNumber * secondNumber;
+} 
+else if (operation === "/") {
+    if (secondNumber !== 0) {
+        result = firstNumber / secondNumber;
+    } else {
+        result = "Error! Division by zero is not allowed.";
+    }
+} 
+else if (operation === "%") {
+    if (secondNumber !== 0) {
+        result = firstNumber % secondNumber;
+    } else {
+        result = "Error! Modulus by zero is not allowed.";
+    }
+} 
+else {
+    result = "Invalid operation!";
+}
+alert("Result: " + result);
+
+    </script>
+    <script src="Script.js"></script>
+  </body>
+</html>
