@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+ var eduQul = ["SSC","HSC","BCS","BS","BCOM","MS","M.Phil","PhD"];
+
+document.writeln("<h3><b>Qualifications:</b></h3>");
+document.writeln("<b>1) " + eduQul[0] + "</b><br>");
+document.writeln("<b>2) " + eduQul[1] + "</b><br>");
+document.writeln("<b>3) " + eduQul[2] + "</b><br>");
+document.writeln("<b>4) " + eduQul[3] + "</b><br>");
+document.writeln("<b>5) " + eduQul[4] + "</b><br>");
+document.writeln("<b>6) " + eduQul[5] + "</b><br>");
+document.writeln("<b>7) " + eduQul[6] + "</b><br>");
+document.writeln("<b>8) " + eduQul[7] + "</b><br>"+ "<br>"+ "<br>");
+    </script>
+
+    <script>
+        var stNames = ["Ali", "Amjad", "Rahim"]
+        var stScore = [320, 230, 480]
+        var p1 = stScore[0]/500 *100;
+        var p2 = stScore[1]/500 *100;
+        var p3 = stScore[2]/500 *100; 
+        
+        document.writeln("Score of "+stNames[0]+ " is "+ stScore[0]+" Percentage: "+p1+ "%"+ "<br>");
+        document.writeln("Score of "+stNames[1]+ " is "+ stScore[1]+" Percentage: "+p2+"%"+ "<br>");
+        document.writeln("Score of "+stNames[2]+ " is "+ stScore[2]+" Percentage: "+p3+"%"+ "<br>"+ "<br>"+ "<br>");
+    </script>
+
+   <script>
+     var colorNames =  ["blue", "black ", "Red"]
+
+     var updatedArr = prompt("What color do you want to add at the beginning")
+     document.writeln("Colors before upadation: <b>"+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]+"</b><br> ")
+     colorNames.splice(0,0,updatedArr);
+     document.writeln("Colors upadation at the beginning:<b> "+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]+" "+colorNames[3]+ "</b><br> ")
+
+     var updatedArr = prompt("What color do you want to add at the end")
+     colorNames.push(updatedArr)
+     document.writeln("Colors upadation at the end: <b>"+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]
+     +" "+colorNames[3]+" "+colorNames[4]+ "</b><br>")
+
+     var upAdd_beg_1 = prompt("Now add one more color at the beginning")
+     var upAdd_beg_2 = prompt("One more color needed at the beginning")
+    colorNames.splice(0,0,upAdd_beg_1,upAdd_beg_2)
+    document.writeln("Colors upadation at the beginning:<b> "+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]+" "+
+    colorNames[3]+" "+colorNames[4]+" "+colorNames[5]+" "+colorNames[6]+ "</b><br> ")
+
+    colorNames.shift();
+    document.writeln("One color deleted at the beginning:<b> "+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]+" "+
+    colorNames[3]+" "+colorNames[4]+" "+colorNames[5]+ "</b><br> ")
+
+    colorNames.pop();
+    document.writeln("One color deleted at the end:<b> "+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]+" "+
+    colorNames[3]+" "+colorNames[4]+ "</b><br> ")
+
+    var addColr = prompt("What Color do you want to add ")
+    var addColrInd = prompt("And which index do you want to add")
+    colorNames(addColrInd,0,addColr);
+     document.writeln("Color added at your desire index:<b> "+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]+" "+
+    colorNames[3]+" "+colorNames[4]+" "+colorNames[5]+  "</b><br> ")
+
+    var deletColrInd = prompt("which index do you want to delet the color") //msl g
+    var deletColrNum = prompt("How many colors do you want to delete");
+     document.writeln("Color deleted at your desire index:<b> "+colorNames[0]+" "+colorNames[1]+" "+colorNames[2]+" "+
+    colorNames[3]+" "+colorNames[4]+" "+colorNames[5]+  "</b><br> "+ "<br>")
+   </script>
+
+   <br><br>
+   <script>
+    var stScore = [320,230,480,120];
+
+    var sortedArr = stScore.sort();
+    document.writeln("Score of Student: "+stScore+ "<br>")
+    document.writeln("Ordered Score of Student: "+sortedArr+ "<br>");
+   </script>
+  
+    <script src="script.js"></script>
+</body>
+</html>
